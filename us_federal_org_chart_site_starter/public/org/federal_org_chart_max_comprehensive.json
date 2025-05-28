@@ -1,0 +1,21 @@
+{
+  "name": "Executive Branch",
+  "children": [
+    {
+      "name": "Department of State",
+      "children": [
+        {
+          "name": "Bureau of Consular Affairs"
+        }
+      ]
+    },
+    {
+      "name": "Department of Defense",
+      "children": [
+        {
+          "name": "U.S. Army"
+        }
+      ]
+    }
+  ]
+}
