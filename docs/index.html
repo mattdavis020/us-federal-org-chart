@@ -74,8 +74,11 @@
         root.x0 = dx;
         root.y0 = 0;
         root.descendants().forEach((d, i) => {
+  root.children = root._children;
+  root._children = null;
           d.id = i;
           d._children = d.children;
+  if (d.depth && d.children) d.children = null;
           if (d.depth && d.children) d.children = null;
         });
 
