@@ -1,30 +1,228 @@
 {
-  "name": "Executive Branch",
+  "name": "U.S. Government",
   "children": [
     {
-      "name": "Department of State",
+      "name": "Executive Branch",
       "children": [
         {
-          "name": "Bureau of Consular Affairs"
-        }
-      ]
-    },
-    {
-      "name": "Department of Defense",
-      "children": [
-        {
-          "name": "U.S. Army"
-        }
-      ]
-    },
-    {
-      "name": "Department of Transportation",
-      "children": [
-        {
-          "name": "FAA"
+          "name": "Department of State",
+          "children": [
+            {
+              "name": "Bureau of Consular Affairs"
+            }
+          ]
         },
         {
-          "name": "PHMSA"
+          "name": "Department of Defense",
+          "children": [
+            {
+              "name": "U.S. Army"
+            },
+            {
+              "name": "Office of the Secretary of Defense (OSD)"
+            },
+            {
+              "name": "Defense Contract Audit Agency (DCAA)"
+            },
+            {
+              "name": "Defense Contract Management Agency (DCMA)"
+            },
+            {
+              "name": "Defense Legal Services Agency (DLSA)"
+            },
+            {
+              "name": "Defense Technology Security Administration (DTSA)"
+            },
+            {
+              "name": "Department of Defense Education Activity (DoDEA)"
+            },
+            {
+              "name": "Department of Defense Human Resources Activity (DoDHRA)"
+            },
+            {
+              "name": "Department of Defense Test Resource Management Center (DODTRMC)"
+            },
+            {
+              "name": "Office of Local Defense Community Cooperation (OLDCC)"
+            }
+          ]
+        },
+        {
+          "name": "Department of Transportation",
+          "children": [
+            {
+              "name": "FAA"
+            },
+            {
+              "name": "PHMSA"
+            },
+            {
+              "name": "Office of the Assistant Secretary for Research and Technology"
+            },
+            {
+              "name": "National Transportation Library"
+            },
+            {
+              "name": "Office of Intelligence, Security, and Emergency Response"
+            },
+            {
+              "name": "Office of Tribal Government Affairs"
+            },
+            {
+              "name": "Office of Drug and Alcohol Policy and Compliance"
+            },
+            {
+              "name": "Office of Hearings"
+            },
+            {
+              "name": "Departmental Office of Civil Rights"
+            },
+            {
+              "name": "Advisory Committee on Transportation Equity"
+            },
+            {
+              "name": "Office of Small and Disadvantaged Business Utilization"
+            }
+          ]
+        },
+        {
+          "name": "Department of Commerce",
+          "children": [
+            {
+              "name": "Office of the Deputy Secretary"
+            },
+            {
+              "name": "Office of Public Engagement (OPE)"
+            },
+            {
+              "name": "Office of Executive Secretariat"
+            },
+            {
+              "name": "Office of Legislative and Intergovernmental Affairs (OLIA)"
+            },
+            {
+              "name": "Office of Policy and Strategic Planning (OPSP)"
+            },
+            {
+              "name": "Office of Public Affairs (OPA)"
+            },
+            {
+              "name": "Office of Security (OSY)"
+            },
+            {
+              "name": "Office of the White House Liaison (OWHL)"
+            },
+            {
+              "name": "Office of Inspector General (OIG)"
+            }
+          ]
+        },
+        {
+          "name": "Department of Health and Human Services (HHS)",
+          "children": [
+            {
+              "name": "Office of the Assistant Secretary for Administration"
+            },
+            {
+              "name": "Office of the Assistant Secretary for Financial Resources"
+            },
+            {
+              "name": "Office of the Assistant Secretary for Legislation"
+            },
+            {
+              "name": "Office of the Assistant Secretary for Planning and Evaluation"
+            },
+            {
+              "name": "Office of the Assistant Secretary for Public Affairs"
+            },
+            {
+              "name": "Office of the Assistant Secretary for Health"
+            },
+            {
+              "name": "National Vaccine Program Office"
+            },
+            {
+              "name": "Office of Adolescent Health"
+            },
+            {
+              "name": "Office of Disease Prevention and Health Promotion"
+            },
+            {
+              "name": "Office of HIV/AIDS and Infectious Disease Policy"
+            },
+            {
+              "name": "Office for Human Research Protections"
+            },
+            {
+              "name": "Office of Minority Health"
+            },
+            {
+              "name": "Office of Population Affairs"
+            },
+            {
+              "name": "Office of Research Integrity"
+            },
+            {
+              "name": "Office of the Surgeon General"
+            },
+            {
+              "name": "Public Health Service Commissioned Corps"
+            },
+            {
+              "name": "Office on Women's Health"
+            },
+            {
+              "name": "President's Council on Sports, Fitness, and Nutrition"
+            },
+            {
+              "name": "Biomedical Advanced Research and Development Authority"
+            },
+            {
+              "name": "Center for Faith and Opportunity Initiative"
+            },
+            {
+              "name": "Departmental Appeals Board"
+            },
+            {
+              "name": "Office for Civil Rights"
+            },
+            {
+              "name": "Office of Global Affairs"
+            },
+            {
+              "name": "Office of Intergovernmental and External Affairs"
+            },
+            {
+              "name": "Office of Medicare Hearings and Appeals"
+            },
+            {
+              "name": "Office of the Chief Technology Officer"
+            },
+            {
+              "name": "Office of the National Coordinator for Health Information Technology"
+            },
+            {
+              "name": "Office of the General Counsel"
+            },
+            {
+              "name": "Agency for Healthcare Research and Quality"
+            },
+            {
+              "name": "Centers for Disease Control and Prevention (CDC)"
+            },
+            {
+              "name": "Administration on Aging"
+            },
+            {
+              "name": "Administration for Children and Families"
+            },
+            {
+              "name": "Administration for Native Americans"
+            },
+            {
+              "name": "Administration on Developmental Disabilities"
+            }
+          ]
         }
       ]
     }
