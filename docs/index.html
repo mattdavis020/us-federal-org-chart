@@ -61,7 +61,7 @@
   <div class="tooltip" id="tooltip"></div>
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script>
-    const width = 1600, dx = 24, dy = 300;
+    const width = 1600, dx = 40, dy = 300;
 
     const tree = d3.tree().nodeSize([dx, dy]);
     const diagonal = d3.linkHorizontal().x(d => d.y).y(d => d.x);
@@ -80,7 +80,7 @@
         });
 
         const svg = d3.select("#tree").append("svg")
-          .attr("viewBox", [-dy / 3, -dx, width, dx * 80])
+          .attr("viewBox", [-dy / 3, -dx, width, dx * 120])
           .style("font", "12px sans-serif");
 
         const g = svg.append("g")
