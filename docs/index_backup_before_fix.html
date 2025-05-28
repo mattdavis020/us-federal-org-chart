@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>U.S. Federal Org Chart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #fafafa;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    .tree-container {
+      width: 100%;
+      height: 90vh;
+      border: 1px solid #ccc;
+      overflow: auto;
+      background: #fff;
+    }
+    svg text {
+      font-size: 12px;
+      pointer-events: none;
+    }
+    .node circle {
+      fill: #999;
+      stroke: #555;
+      stroke-width: 1.5px;
+    }
+    .node text {
+      fill: #333;
+    }
+    .link {
+      fill: none;
+      stroke: #ccc;
+      stroke-width: 1.5px;
+    }
+    .tooltip {
+      position: absolute;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 4px 8px;
+      font-size: 12px;
+      pointer-events: none;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>U.S. Federal Org Chart Viewer</h1>
+  <p>Interactively explore federal departments and agencies.</p>
+  <div class="tree-container" id="tree"></div>
+  <div class="tooltip" id="tooltip"></div>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+    const width = 1600, dx = 40, dy = 300;
+
+    const tree = d3.tree().nodeSize([dx, dy]);
+    const diagonal = d3.linkHorizontal().x(d => d.y).y(d => d.x);
+    const tooltip = d3.select("#tooltip");
+
+    fetch("./org/federal_org_chart_max_comprehensive.json")
+      .then(res => res.json())
+      .then(data => {
+        const root = d3.hierarchy(data);
+        root.x0 = dx;
+        root.y0 = 0;
+        root.descendants().forEach((d, i) => {
+  root.children = root._children;
+  root._children = null;
+          d.id = i;
+          d._children = d.children;
+  if (d.depth && d.children) d.children = null;
+          if (d.depth && d.children) d.children = null;
+        });
+
+        const svg = d3.select("#tree").append("svg")
+          .attr("viewBox", [-dy / 3, -dx, width, dx * 120])
+          .style("font", "12px sans-serif");
+
+        const g = svg.append("g")
+          .attr("transform", `translate(${dy / 3},${dx})`);
+
+        svg.call(d3.zoom().scaleExtent([0.1, 3]).on("zoom", (event) => {
+          g.attr("transform", event.transform);
+        }));
+
+        function update(source) {
+          const nodes = root.descendants().reverse();
+          const links = root.links();
+          tree(root);
+
+          const node = g.selectAll("g.node")
+            .data(nodes, d => d.id);
+
+          const nodeEnter = node.enter().append("g")
+            .attr("class", "node")
+            .attr("transform", d => `translate(${source.y0},${source.x0})`)
+            .on("click", (event, d) => {
+              d.children = d.children ? null : d._children;
+              update(d);
+            })
+            .on("mouseover", (event, d) => {
+              tooltip.style("display", "block")
+                     .style("left", (event.pageX + 10) + "px")
+                     .style("top", (event.pageY + 10) + "px")
+                     .text(d.data.name);
+            })
+            .on("mouseout", () => tooltip.style("display", "none"));
+
+          nodeEnter.append("circle")
+            .attr("r", 4)
+            .attr("fill", d => d._children ? "#555" : "#999");
+
+          nodeEnter.append("text")
+            .attr("dy", "0.31em")
+            .attr("x", d => d._children ? -8 : 8)
+            .attr("text-anchor", d => d._children ? "end" : "start")
+            .text(d => d.data.name.length > 40 ? d.data.name.slice(0, 37) + "..." : d.data.name)
+            .clone(true).lower()
+            .attr("stroke", "white");
+
+          g.selectAll("path.link")
+            .data(links, d => d.target.id)
+            .join("path")
+            .attr("class", "link")
+            .attr("d", d => diagonal({ source: d.source, target: d.target }));
+
+          nodes.forEach(d => { d.x0 = d.x; d.y0 = d.y; });
+        }
+
+        update(root);
+      });
+  </script>
+</body>
+</html>
