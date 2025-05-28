@@ -1,34 +1,130 @@
 {
-  "name": "U.S. Government",
+  "name": "United States Government",
   "children": [
     {
       "name": "Executive Branch",
       "children": [
         {
-          "name": "Department of State",
+          "name": "Office of Management and Budget (OMB)",
           "children": [
             {
-              "name": "Bureau of Consular Affairs"
+              "name": "Director"
+            },
+            {
+              "name": "Deputy Director"
+            },
+            {
+              "name": "Deputy Director for Management"
+            },
+            {
+              "name": "Resource Management Offices (RMOs)",
+              "children": [
+                {
+                  "name": "Natural Resources Programs"
+                },
+                {
+                  "name": "Health Programs"
+                },
+                {
+                  "name": "Education, Income Maintenance, and Labor Programs"
+                },
+                {
+                  "name": "General Government Programs"
+                },
+                {
+                  "name": "National Security Programs"
+                }
+              ]
+            },
+            {
+              "name": "Statutory Offices",
+              "children": [
+                {
+                  "name": "Office of Federal Financial Management (OFFM)"
+                },
+                {
+                  "name": "Office of Federal Procurement Policy (OFPP)"
+                },
+                {
+                  "name": "Office of E-Government and IT (E-Gov)"
+                },
+                {
+                  "name": "Office of Information and Regulatory Affairs (OIRA)"
+                }
+              ]
+            },
+            {
+              "name": "OMB-Wide Support Offices",
+              "children": [
+                {
+                  "name": "Office of General Counsel"
+                },
+                {
+                  "name": "Office of Legislative Affairs"
+                },
+                {
+                  "name": "Office of Communications"
+                },
+                {
+                  "name": "Office of Management and Operations"
+                }
+              ]
             }
           ]
         },
         {
-          "name": "Department of Defense",
+          "name": "Department of Defense (DoD)",
           "children": [
+            {
+              "name": "Joint Chiefs of Staff"
+            },
             {
               "name": "U.S. Army"
             },
             {
-              "name": "Office of the Secretary of Defense (OSD)"
+              "name": "U.S. Navy"
             },
             {
-              "name": "Defense Contract Audit Agency (DCAA)"
+              "name": "U.S. Air Force"
             },
             {
-              "name": "Defense Contract Management Agency (DCMA)"
+              "name": "U.S. Marine Corps"
             },
             {
-              "name": "Defense Legal Services Agency (DLSA)"
+              "name": "U.S. Space Force"
+            },
+            {
+              "name": "Defense Intelligence Agency (DIA)"
+            },
+            {
+              "name": "National Security Agency (NSA)"
+            },
+            {
+              "name": "Defense Logistics Agency (DLA)"
+            },
+            {
+              "name": "Defense Counterintelligence and Security Agency (DCSA)"
+            },
+            {
+              "name": "Office of the Secretary of Defense"
+            },
+            {
+              "name": "Defense Advanced Research Projects Agency (DARPA)"
+            },
+            {
+              "name": "Missile Defense Agency"
+            },
+            {
+              "name": "Defense Health Agency"
+            },
+            {
+              "name": "Washington Headquarters Services"
+            },
+            {
+              "name": "Defense Media Activity (DMA)"
+            },
+            {
+              "name": "Defense Technical Information Center (DTIC)"
             },
             {
               "name": "Defense Technology Security Administration (DTSA)"
@@ -44,17 +140,220 @@
             },
             {
               "name": "Office of Local Defense Community Cooperation (OLDCC)"
+            },
+            {
+              "name": "Washington Headquarters Services (WHS)"
+            },
+            {
+              "name": "Office of the Secretary of Defense (OSD)"
+            },
+            {
+              "name": "Defense Contract Audit Agency (DCAA)"
+            },
+            {
+              "name": "Defense Contract Management Agency (DCMA)"
+            },
+            {
+              "name": "Defense Legal Services Agency (DLSA)"
             }
           ]
         },
         {
-          "name": "Department of Transportation",
+          "name": "Department of Veterans Affairs (VA)",
           "children": [
             {
-              "name": "FAA"
+              "name": "Veterans Health Administration (VHA)"
             },
             {
-              "name": "PHMSA"
+              "name": "Veterans Benefits Administration (VBA)"
+            },
+            {
+              "name": "National Cemetery Administration (NCA)"
+            },
+            {
+              "name": "Office of Information and Technology"
+            },
+            {
+              "name": "Office of Human Resources"
+            },
+            {
+              "name": "Veterans Experience Office"
+            }
+          ]
+        },
+        {
+          "name": "Department of the Interior (DOI)",
+          "children": [
+            {
+              "name": "National Park Service (NPS)"
+            },
+            {
+              "name": "U.S. Fish and Wildlife Service (FWS)"
+            },
+            {
+              "name": "Bureau of Land Management (BLM)"
+            },
+            {
+              "name": "U.S. Geological Survey (USGS)"
+            },
+            {
+              "name": "Bureau of Indian Affairs (BIA)"
+            }
+          ]
+        },
+        {
+          "name": "Department of Agriculture (USDA)",
+          "children": [
+            {
+              "name": "Food and Nutrition Service (FNS)"
+            },
+            {
+              "name": "Forest Service (USFS)"
+            },
+            {
+              "name": "Farm Service Agency (FSA)"
+            },
+            {
+              "name": "Animal and Plant Health Inspection Service (APHIS)"
+            },
+            {
+              "name": "Office of the Chief Economist (OCE)"
+            },
+            {
+              "name": "Office of the Chief Scientist (OCS)"
+            },
+            {
+              "name": "Office of Partnerships and Public Engagement (OPPE)"
+            },
+            {
+              "name": "Office of Tribal Relations (OTR)"
+            },
+            {
+              "name": "Office of Urban Agriculture and Innovative Production (OUAIP)"
+            },
+            {
+              "name": "Office of the Assistant Secretary for Civil Rights (OASCR)"
+            },
+            {
+              "name": "Office of the Assistant Secretary for Administration (OASA)"
+            },
+            {
+              "name": "Office of the Assistant Secretary for Congressional Relations (OASCR)"
+            },
+            {
+              "name": "Office of the Assistant Secretary for Marketing and Regulatory Programs (OASMRP)"
+            },
+            {
+              "name": "Office of the Assistant Secretary for Natural Resources and Environment (OASNRE)"
+            },
+            {
+              "name": "Office of the Assistant Secretary for Research, Education, and Economics (OASREE)"
+            },
+            {
+              "name": "Office of the Assistant Secretary for Rural Development (OASRD)"
+            },
+            {
+              "name": "Office of the Assistant Secretary for Trade and Foreign Agricultural Affairs (OASTFAA)"
+            },
+            {
+              "name": "Office of the Chief Financial Officer (OCFO)"
+            },
+            {
+              "name": "Office of the Chief Information Officer (OCIO)"
+            },
+            {
+              "name": "Office of the General Counsel (OGC)"
+            },
+            {
+              "name": "Office of the Inspector General (OIG)"
+            },
+            {
+              "name": "Office of Communications (OC)"
+            },
+            {
+              "name": "Office of Budget and Program Analysis (OBPA)"
+            },
+            {
+              "name": "Office of the Executive Secretariat (OES)"
+            },
+            {
+              "name": "Office of Ethics (OE)"
+            },
+            {
+              "name": "Office of Human Resources Management (OHRM)"
+            },
+            {
+              "name": "Office of Operations (OO)"
+            },
+            {
+              "name": "Office of Procurement and Property Management (OPPM)"
+            },
+            {
+              "name": "Office of Small and Disadvantaged Business Utilization (OSDBU)"
+            },
+            {
+              "name": "Office of the White House Liaison (OWHL)"
+            }
+          ]
+        },
+        {
+          "name": "Department of Energy (DOE)",
+          "children": [
+            {
+              "name": "Office of Energy Efficiency and Renewable Energy (EERE)"
+            },
+            {
+              "name": "Office of Nuclear Energy"
+            },
+            {
+              "name": "National Nuclear Security Administration (NNSA)"
+            },
+            {
+              "name": "Office of Science"
+            },
+            {
+              "name": "Advanced Research Projects Agency\u2013Energy (ARPA-E)"
+            },
+            {
+              "name": "National Laboratories"
+            },
+            {
+              "name": "Office of Science (DOE SC)"
+            }
+          ]
+        },
+        {
+          "name": "Department of Transportation (DOT)",
+          "children": [
+            {
+              "name": "Federal Aviation Administration (FAA)"
+            },
+            {
+              "name": "Federal Highway Administration (FHWA)"
+            },
+            {
+              "name": "Federal Transit Administration (FTA)"
+            },
+            {
+              "name": "National Highway Traffic Safety Administration (NHTSA)"
+            },
+            {
+              "name": "Advanced Research Projects Agency\u2013Infrastructure (ARPA-I)"
+            },
+            {
+              "name": "Great Lakes St. Lawrence Seaway Development Corporation (GLS)"
+            },
+            {
+              "name": "Maritime Administration (MARAD)"
+            },
+            {
+              "name": "John A. Volpe National Transportation Systems Center"
+            },
+            {
+              "name": "Bureau of Transportation Statistics (BTS)"
+            },
+            {
+              "name": "Pipeline and Hazardous Materials Safety Administration (PHMSA)"
             },
             {
               "name": "Office of the Assistant Secretary for Research and Technology"
@@ -86,16 +385,160 @@
           ]
         },
         {
+          "name": "Department of Education (ED)",
+          "children": [
+            {
+              "name": "Office of Elementary and Secondary Education"
+            },
+            {
+              "name": "Office of Federal Student Aid"
+            },
+            {
+              "name": "Office for Civil Rights"
+            },
+            {
+              "name": "Institute of Education Sciences (IES)"
+            },
+            {
+              "name": "National Institute on Disability and Rehabilitation Research (NIDRR)"
+            },
+            {
+              "name": "Office of the Under Secretary (OUS)"
+            },
+            {
+              "name": "Office of the Secretary (OS)"
+            },
+            {
+              "name": "Office of Legislative and Congressional Affairs (OLCA)"
+            },
+            {
+              "name": "Office of the Chief Risk Officer (OCRO)"
+            },
+            {
+              "name": "Office of the Chief Security Officer (OCSO)"
+            },
+            {
+              "name": "Office of the Chief Procurement Officer (OCPO)"
+            },
+            {
+              "name": "Office of Planning, Evaluation, and Policy Development (OPEPD)"
+            },
+            {
+              "name": "Office of the Chief Performance Officer (OCPO)"
+            },
+            {
+              "name": "Office of the Chief Operating Officer (OCOO)"
+            },
+            {
+              "name": "Office of the Chief Information Officer (OCIO)"
+            },
+            {
+              "name": "Office of Communications and Outreach (OCO)"
+            },
+            {
+              "name": "Office of the Chief Financial Officer (OCFO)"
+            },
+            {
+              "name": "Office of the Deputy Secretary (ODS)"
+            },
+            {
+              "name": "Office of Management (OM)"
+            },
+            {
+              "name": "Office of the General Counsel (OGC)"
+            },
+            {
+              "name": "Office of the Chief Data Officer (OCDO)"
+            },
+            {
+              "name": "Office of the Chief Privacy Officer (OCPO)"
+            },
+            {
+              "name": "Office of the Chief Technology Officer (OCTO)"
+            },
+            {
+              "name": "Office of the Inspector General (OIG)"
+            },
+            {
+              "name": "Office of the Chief Acquisition Officer (OCAO)"
+            },
+            {
+              "name": "Office of the Chief Human Capital Officer (OCHCO)"
+            }
+          ]
+        },
+        {
+          "name": "Department of Housing and Urban Development (HUD)",
+          "children": [
+            {
+              "name": "Federal Housing Administration (FHA)"
+            },
+            {
+              "name": "Office of Public and Indian Housing"
+            },
+            {
+              "name": "Office of Community Planning and Development"
+            }
+          ]
+        },
+        {
+          "name": "Department of Labor (DOL)",
+          "children": [
+            {
+              "name": "Occupational Safety and Health Administration (OSHA)"
+            },
+            {
+              "name": "Employment and Training Administration (ETA)"
+            },
+            {
+              "name": "Bureau of Labor Statistics (BLS)"
+            }
+          ]
+        },
+        {
           "name": "Department of Commerce",
           "children": [
             {
-              "name": "Office of the Deputy Secretary"
+              "name": "U.S. Census Bureau"
             },
             {
-              "name": "Office of Public Engagement (OPE)"
+              "name": "National Oceanic and Atmospheric Administration (NOAA)"
             },
             {
-              "name": "Office of Executive Secretariat"
+              "name": "International Trade Administration (ITA)"
+            },
+            {
+              "name": "Office of the Secretary"
+            },
+            {
+              "name": "Economic Development Administration"
+            },
+            {
+              "name": "Minority Business Development Agency"
+            },
+            {
+              "name": "National Telecommunications and Information Administration"
+            },
+            {
+              "name": "Bureau of Economic Analysis"
+            },
+            {
+              "name": "International Trade Administration"
+            },
+            {
+              "name": "United States Patent and Trademark Office"
+            },
+            {
+              "name": "Office of the Chief Financial Officer and Assistant Secretary for Administration (CFO/ASA)"
+            },
+            {
+              "name": "Office of the Chief Information Officer (OCIO)"
+            },
+            {
+              "name": "Office of the General Counsel (OGC)"
+            },
+            {
+              "name": "Office of the Inspector General (OIG)"
             },
             {
               "name": "Office of Legislative and Intergovernmental Affairs (OLIA)"
@@ -113,6 +556,15 @@
               "name": "Office of the White House Liaison (OWHL)"
             },
             {
+              "name": "Office of the Deputy Secretary"
+            },
+            {
+              "name": "Office of Public Engagement (OPE)"
+            },
+            {
+              "name": "Office of Executive Secretariat"
+            },
+            {
               "name": "Office of Inspector General (OIG)"
             }
           ]
@@ -120,6 +572,39 @@
         {
           "name": "Department of Health and Human Services (HHS)",
           "children": [
+            {
+              "name": "Centers for Disease Control and Prevention (CDC)"
+            },
+            {
+              "name": "National Institutes of Health (NIH)"
+            },
+            {
+              "name": "Food and Drug Administration (FDA)"
+            },
+            {
+              "name": "Office of the Secretary"
+            },
+            {
+              "name": "Office of the Assistant Secretary for Health"
+            },
+            {
+              "name": "Office of the Surgeon General"
+            },
+            {
+              "name": "CDC"
+            },
+            {
+              "name": "FDA"
+            },
+            {
+              "name": "Office of the National Coordinator for Health IT"
+            },
+            {
+              "name": "Office for Civil Rights"
+            },
+            {
+              "name": "Advanced Research Projects Agency for Health (ARPA-H)"
+            },
             {
               "name": "Office of the Assistant Secretary for Administration"
             },
@@ -134,9 +619,6 @@
             },
             {
               "name": "Office of the Assistant Secretary for Public Affairs"
-            },
-            {
-              "name": "Office of the Assistant Secretary for Health"
             },
             {
               "name": "National Vaccine Program Office"
@@ -163,9 +645,6 @@
               "name": "Office of Research Integrity"
             },
             {
-              "name": "Office of the Surgeon General"
-            },
-            {
               "name": "Public Health Service Commissioned Corps"
             },
             {
@@ -182,9 +661,6 @@
             },
             {
               "name": "Departmental Appeals Board"
-            },
-            {
-              "name": "Office for Civil Rights"
             },
             {
               "name": "Office of Global Affairs"
@@ -208,9 +684,6 @@
               "name": "Agency for Healthcare Research and Quality"
             },
             {
-              "name": "Centers for Disease Control and Prevention (CDC)"
-            },
-            {
               "name": "Administration on Aging"
             },
             {
@@ -221,6 +694,298 @@
             },
             {
               "name": "Administration on Developmental Disabilities"
+            }
+          ]
+        },
+        {
+          "name": "Independent Agencies",
+          "children": [
+            {
+              "name": "Environmental Protection Agency (EPA)"
+            },
+            {
+              "name": "National Aeronautics and Space Administration (NASA)"
+            },
+            {
+              "name": "Small Business Administration (SBA)"
+            },
+            {
+              "name": "Social Security Administration (SSA)"
+            },
+            {
+              "name": "Federal Communications Commission (FCC)"
+            },
+            {
+              "name": "Securities and Exchange Commission (SEC)"
+            },
+            {
+              "name": "Federal Trade Commission (FTC)"
+            },
+            {
+              "name": "National Science Foundation (NSF)"
+            },
+            {
+              "name": "Office of Personnel Management (OPM)"
+            },
+            {
+              "name": "General Services Administration (GSA)"
+            },
+            {
+              "name": "U.S. Access Board"
+            },
+            {
+              "name": "Federal Executive Boards (FEBs)"
+            },
+            {
+              "name": "Chief Information Officers Council"
+            },
+            {
+              "name": "Office of the Federal Register (OFR)"
+            }
+          ]
+        },
+        {
+          "name": "Centers for Medicare & Medicaid Services (CMS)"
+        },
+        {
+          "name": "Health Resources and Services Administration (HRSA)"
+        },
+        {
+          "name": "Indian Health Service (IHS)"
+        },
+        {
+          "name": "Substance Abuse and Mental Health Services Administration (SAMHSA)"
+        },
+        {
+          "name": "Defense Health Agency (DHA)"
+        },
+        {
+          "name": "Defense Information Systems Agency (DISA)"
+        },
+        {
+          "name": "Defense Finance and Accounting Service (DFAS)"
+        },
+        {
+          "name": "Defense Commissary Agency (DeCA)"
+        },
+        {
+          "name": "National Geospatial-Intelligence Agency (NGA)"
+        },
+        {
+          "name": "National Reconnaissance Office (NRO)"
+        },
+        {
+          "name": "National Security Agency/Central Security Service (NSA/CSS)"
+        },
+        {
+          "name": "Independent Agencies (Expanded)",
+          "children": [
+            {
+              "name": "Administrative Conference of the United States (ACUS)"
+            },
+            {
+              "name": "African Development Foundation (USADF)"
+            },
+            {
+              "name": "Appalachian Regional Commission (ARC)"
+            },
+            {
+              "name": "Armed Forces Retirement Home (AFRH)"
+            },
+            {
+              "name": "Commission on Civil Rights"
+            },
+            {
+              "name": "Equal Employment Opportunity Commission (EEOC)"
+            },
+            {
+              "name": "Export-Import Bank of the United States (EXIM)"
+            },
+            {
+              "name": "Federal Election Commission (FEC)"
+            },
+            {
+              "name": "Federal Energy Regulatory Commission (FERC)"
+            },
+            {
+              "name": "Federal Labor Relations Authority (FLRA)"
+            },
+            {
+              "name": "Federal Maritime Commission (FMC)"
+            },
+            {
+              "name": "Federal Mediation and Conciliation Service (FMCS)"
+            },
+            {
+              "name": "Federal Mine Safety and Health Review Commission"
+            },
+            {
+              "name": "Federal Reserve System"
+            },
+            {
+              "name": "Federal Retirement Thrift Investment Board"
+            },
+            {
+              "name": "Merit Systems Protection Board (MSPB)"
+            },
+            {
+              "name": "National Archives and Records Administration (NARA)"
+            },
+            {
+              "name": "National Credit Union Administration (NCUA)"
+            },
+            {
+              "name": "National Endowment for the Arts (NEA)"
+            },
+            {
+              "name": "National Endowment for the Humanities (NEH)"
+            },
+            {
+              "name": "National Labor Relations Board (NLRB)"
+            },
+            {
+              "name": "National Mediation Board (NMB)"
+            },
+            {
+              "name": "Office of Government Ethics (OGE)"
+            },
+            {
+              "name": "Office of Special Counsel (OSC)"
+            },
+            {
+              "name": "Overseas Private Investment Corporation (OPIC)"
+            },
+            {
+              "name": "Peace Corps"
+            },
+            {
+              "name": "Pension Benefit Guaranty Corporation (PBGC)"
+            },
+            {
+              "name": "Selective Service System"
+            },
+            {
+              "name": "Tennessee Valley Authority (TVA)"
+            },
+            {
+              "name": "U.S. Agency for International Development (USAID)"
+            },
+            {
+              "name": "U.S. International Development Finance Corporation (DFC)"
+            },
+            {
+              "name": "U.S. Postal Service (USPS)"
+            },
+            {
+              "name": "U.S. Trade and Development Agency (USTDA)"
+            }
+          ]
+        },
+        {
+          "name": "Department of Homeland Security",
+          "children": [
+            {
+              "name": "Directorate for Science and Technology (S&T)"
+            },
+            {
+              "name": "Coast Guard Research & Development Center (CG RDC)"
+            }
+          ]
+        },
+        {
+          "name": "Department of Justice",
+          "children": [
+            {
+              "name": "National Institute of Justice (NIJ)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Legislative Branch",
+      "children": [
+        {
+          "name": "Senate"
+        },
+        {
+          "name": "House of Representatives"
+        },
+        {
+          "name": "Support Agencies",
+          "children": [
+            {
+              "name": "Congressional Budget Office (CBO)"
+            },
+            {
+              "name": "Government Accountability Office (GAO)"
+            },
+            {
+              "name": "Library of Congress"
+            },
+            {
+              "name": "Congressional Research Service (CRS)"
+            },
+            {
+              "name": "Architect of the Capitol"
+            },
+            {
+              "name": "Government Publishing Office (GPO)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Judicial Branch",
+      "children": [
+        {
+          "name": "Supreme Court of the United States"
+        },
+        {
+          "name": "U.S. Courts of Appeals"
+        },
+        {
+          "name": "U.S. District Courts"
+        },
+        {
+          "name": "U.S. Bankruptcy Courts"
+        },
+        {
+          "name": "Administrative Office of the U.S. Courts"
+        },
+        {
+          "name": "Federal Judicial Center"
+        },
+        {
+          "name": "U.S. Sentencing Commission"
+        },
+        {
+          "name": "Department of Justice",
+          "children": [
+            {
+              "name": "Office of the Attorney General"
+            },
+            {
+              "name": "Deputy Attorney General"
+            },
+            {
+              "name": "Associate Attorney General"
+            },
+            {
+              "name": "Federal Bureau of Investigation (FBI)"
+            },
+            {
+              "name": "Drug Enforcement Administration (DEA)"
+            },
+            {
+              "name": "Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF)"
+            },
+            {
+              "name": "U.S. Marshals Service"
+            },
+            {
+              "name": "Office of the Solicitor General"
             }
           ]
         }
