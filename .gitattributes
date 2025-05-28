@@ -1,2 +1,33 @@
-# Auto detect text files and perform LF normalization
+# General settings
 * text=auto
+
+# HTML
+*.html text eol=lf diff=html
+
+# JSON
+*.json text eol=lf diff=json
+
+# CSS
+*.css text eol=lf diff=css
+
+# JavaScript
+*.js text eol=lf diff=javascript
+
+# SVG (Vector graphics)
+*.svg text eol=lf
+
+# Markdown docs
+*.md text eol=lf diff=markdown
+
+# Shell scripts
+*.sh text eol=lf
+
+# GitHub linguist overrides (optional)
+*.json linguist-language=JSON
+*.svg linguist-language=SVG
+
+# Ignore binaries and images (if any added later)
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
