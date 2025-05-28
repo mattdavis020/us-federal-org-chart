@@ -16,6 +16,17 @@
           "name": "U.S. Army"
         }
       ]
+    },
+    {
+      "name": "Department of Transportation",
+      "children": [
+        {
+          "name": "FAA"
+        },
+        {
+          "name": "PHMSA"
+        }
+      ]
     }
   ]
 }
